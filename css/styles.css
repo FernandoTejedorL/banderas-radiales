@@ -26,4 +26,64 @@ ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  color: white;
+  background-color: darkgrey;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bott {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flags {
+  display: flex;
+  gap: 5px;
+}
+
+.flag-box {
+  height: 150px;
+  width: 200px;
+  border: 2px solid white;
+}
+
+.one {
+  background-image: radial-gradient(circle, red 45%, white 45%);
+}
+
+.two {
+  background-image: radial-gradient(
+    circle at 70px,
+    yellow 40px,
+    lightskyblue 40px
+  );
+}
+
+.three {
+  background-image: linear-gradient(red 25%, transparent 25% 75%, red 75%),
+    radial-gradient(circle, white 35px, blue 35px);
+}
+
+.rainbow {
+  width: 650px;
+  height: 300px;
+  border: 2px solid white;
+  background-image: radial-gradient(
+    circle at bottom,
+    transparent 50px,
+    red 50px 80px,
+    orange 80px 110px,
+    yellow 110px 140px,
+    limegreen 140px 170px,
+    blue 170px 200px,
+    darkblue 200px 230px,
+    rgb(247, 158, 247) 230px 260px,
+    transparent 260px
+  );
 }
